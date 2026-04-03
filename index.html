@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthu Bhava — .NET Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader"><div class="ld-logo">Muthu Bhava</div><div class="ld-bar"><div class="ld-fill"></div></div><span class="ld-txt">Loading Portfolio</span></div>
+    <div id="cur"></div>
+    <div id="cur-ring"></div>
+    <div id="pts"></div>
+
+    <nav>
+        <div class="logo">Muthu Bhava Jamal Mohamed(Full-Stack Version)</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-left">
+            <div class="hero-eyebrow">// Available for Opportunities</div>
+            <h1 class="hero-name">Muthu<br><em>Bhava</em></h1>
+            <p class="hero-role">I am a <span class="typed" id="typed"></span><span style="color:var(--accent3);animation:blink .8s step-end infinite">|</span></p>
+            <p class="hero-desc">3+ years building scalable web applications, APIs, and enterprise systems in .NET Core, C#, and MVC — crafting end-to-end digital experiences from pixel-perfect UIs to high-performance backends.</p>
+            <div class="hero-cta"><a href="#portfolio" class="btn-gold">View Work</a><a href="#contact" class="btn-ghost">Get In Touch</a></div>
+            <div class="hero-stats">
+                <div><div class="stat-n">12+</div><div class="stat-l">Projects</div></div>
+                <div><div class="stat-n">3+</div><div class="stat-l">Years Exp</div></div>
+                <div><div class="stat-n">3</div><div class="stat-l">Companies</div></div>
+                <div><div class="stat-n">10+</div><div class="stat-l">Certs</div></div>
+            </div>
+        </div>
+
+        <!-- ANIMATED CODER BOY -->
+        <div class="hero-right">
+            <div style="position:relative;width:100%;max-width:460px">
+                <div class="coder-glow"></div>
+                <svg viewBox="0 0 420 490" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block">
+                    <defs>
+
+                    </defs>
+
+                    <!-- BACKGROUND DESK AREA -->
+                    <!-- Bookshelf hint -->
+                    <rect x="48" y="200" width="58" height="90" rx="2" fill="#16120c" opacity=".7" />
+                    <rect x="52" y="204" width="10" height="82" rx="1" fill="#8b2500" />
+                    <rect x="64" y="210" width="8" height="76" rx="1" fill="#1a4a7a" />
+                    <rect x="74" y="206" width="12" height="80" rx="1" fill="#2d6a2d" />
+                    <rect x="88" y="212" width="9" height="74" rx="1" fill="#4a2d8b" />
+                    <rect x="48" y="288" width="58" height="4" rx="1" fill="#0d0a06" />
+
+                    <!-- DESK -->
+                    <rect x="30" y="295" width="360" height="14" rx="3" fill="#221c12" />
+                    <rect x="30" y="307" width="14" height="4" rx="1" fill="#1a1409" />
+                    <rect x="376" y="307" width="14" height="4" rx="1" fill="#1a1409" />
+                    <rect x="40" y="307" width="10" height="90" rx="3" fill="#1a1409" />
+                    <rect x="370" y="307" width="10" height="90" rx="3" fill="#1a1409" />
+
+                    <!-- COFFEE MUG -->
+                    <rect x="318" y="268" width="30" height="27" rx="4" fill="#b03030" />
+                    <rect x="321" y="272" width="24" height="17" rx="2" fill="#6b0000" />
+                    <!-- Handle -->
+                    <path d="M348 274 Q360 274 360 282 Q360 291 348 291" fill="none" stroke="#b03030" stroke-width="3" stroke-linecap="round" />
+                    <!-- Steam wisps -->
+                    <g style="animation:cb-steam 2s ease-out infinite"><path d="M326 267 Q328 260 326 254" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" stroke-linecap="round" /></g>
+                    <g style="animation:cb-steam 2s ease-out .65s infinite"><path d="M334 267 Q336 259 334 253" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.5" stroke-linecap="round" /></g>
+
+                    <!-- PLANT -->
+                    <rect x="55" y="274" width="24" height="22" rx="3" fill="#7a3b10" />
+                    <ellipse cx="67" cy="268" rx="15" ry="20" fill="#2d6016" />
+                    <ellipse cx="55" cy="256" rx="11" ry="15" fill="#245010" />
+                    <ellipse cx="79" cy="258" rx="11" ry="15" fill="#245010" />
+                    <ellipse cx="67" cy="252" rx="8" ry="11" fill="#1a3a0a" />
+
+                    <!-- LAPTOP BASE -->
+                    <rect x="144" y="266" width="158" height="28" rx="5" fill="#252530" />
+                    <rect x="140" y="291" width="166" height="6" rx="2" fill="#1a1a22" />
+                    <!-- Touchpad -->
+                    <rect x="196" y="272" width="54" height="16" rx="2" fill="#1e1e28" />
+
+                    <!-- LAPTOP SCREEN BODY -->
+                    <rect x="152" y="158" width="142" height="110" rx="6" fill="#1c1c26" />
+                    <rect x="156" y="162" width="134" height="102" rx="4" fill="#080e1a" style="animation:cb-screen 9s infinite" />
+
+                    <!-- TOP MENU BAR -->
+                    <rect x="156" y="162" width="134" height="13" rx="4" fill="#111827" />
+                    <circle cx="165" cy="168.5" r="3.5" fill="#e05d44" />
+                    <circle cx="176" cy="168.5" r="3.5" fill="#f0a500" />
+                    <circle cx="187" cy="168.5" r="3.5" fill="#4ecdc4" />
+                    <rect x="198" y="165" width="64" height="7" rx="2" fill="rgba(255,255,255,.07)" />
+
+                    <!-- LINE NUMBERS -->
+                    <text x="161" y="186" font-size="5.5" fill="rgba(255,255,255,.18)" font-family="monospace">1</text>
+                    <text x="161" y="196" font-size="5.5" fill="rgba(255,255,255,.18)" font-family="monospace">2</text>
+                    <text x="161" y="206" font-size="5.5" fill="rgba(255,255,255,.18)" font-family="monospace">3</text>
+                    <text x="161" y="216" font-size="5.5" fill="rgba(255,255,255,.18)" font-family="monospace">4</text>
+                    <text x="161" y="226" font-size="5.5" fill="rgba(255,255,255,.18)" font-family="monospace">5</text>
+                    <text x="161" y="236" font-size="5.5" fill="rgba(255,255,255,.18)" font-family="monospace">6</text>
+                    <text x="161" y="246" font-size="5.5" fill="rgba(255,255,255,.18)" font-family="monospace">7</text>
+                    <text x="161" y="256" font-size="5.5" fill="rgba(255,255,255,.18)" font-family="monospace">8</text>
+
+                    <!-- CODE LINES WITH STAGGERED FADE -->
+                    <g style="animation:cb-code 5s 0s infinite ease-in-out">
+                        <text x="170" y="186" font-size="6" fill="#4ecdc4" font-family="monospace">namespace IMFS {</text>
+                    </g>
+                    <g style="animation:cb-code 5s .6s infinite ease-in-out">
+                        <text x="170" y="196" font-size="6" fill="#a8e6cf" font-family="monospace">  class Developer {</text>
+                    </g>
+                    <g style="animation:cb-code 5s 1.2s infinite ease-in-out">
+                        <text x="170" y="206" font-size="6" fill="#f0a500" font-family="monospace">    string Name =</text>
+                        <text x="239" y="206" font-size="6" fill="#a8d8a8" font-family="monospace"> "Muthu";</text>
+                    </g>
+                    <g style="animation:cb-code 5s 1.8s infinite ease-in-out">
+                        <text x="170" y="216" font-size="6" fill="#f0a500" font-family="monospace">    int YearsExp =</text>
+                        <text x="242" y="216" font-size="6" fill="#79c0ff" font-family="monospace"> 3;</text>
+                    </g>
+                    <g style="animation:cb-code 5s 2.4s infinite ease-in-out">
+                        <text x="170" y="226" font-size="6" fill="#e05d44" font-family="monospace">    void</text>
+                        <text x="191" y="226" font-size="6" fill="#4ecdc4" font-family="monospace"> Build()</text>
+                        <text x="218" y="226" font-size="6" fill="#fff" font-family="monospace"> {</text>
+                    </g>
+                    <g style="animation:cb-code 5s 3s infinite ease-in-out">
+                        <text x="170" y="236" font-size="6" fill="rgba(255,255,255,.5)" font-family="monospace">      return 💡;</text>
+                    </g>
+                    <g style="animation:cb-code 5s 3.6s infinite ease-in-out">
+                        <text x="170" y="246" font-size="6" fill="rgba(255,255,255,.4)" font-family="monospace">    } } }</text>
+                    </g>
+                    <!-- Blinking cursor on screen -->
+                    <rect x="170" y="252" width="5" height="7" fill="#f0a500" style="animation:cb-cursor 1s step-end infinite" />
+
+                    <!-- HINGE -->
+                    <rect x="197" y="264" width="52" height="5" rx="2" fill="#111" />
+
+                    <!-- CHAIR -->
+                    <rect x="148" y="358" width="130" height="16" rx="4" fill="#141420" />
+                    <rect x="167" y="320" width="92" height="42" rx="4" fill="#111120" />
+                    <rect x="158" y="316" width="110" height="9" rx="4" fill="#0e0e1a" />
+                    <rect x="148" y="372" width="13" height="68" rx="4" fill="#111120" />
+                    <rect x="265" y="372" width="13" height="68" rx="4" fill="#111120" />
+                    <ellipse cx="154" cy="441" rx="16" ry="5" fill="#0e0e1a" />
+                    <ellipse cx="271" cy="441" rx="16" ry="5" fill="#0e0e1a" />
+
+                    <!-- === BODY (floating group) === -->
+                    <g style="animation:cb-float 4.5s ease-in-out infinite">
+
+                        <!-- LEGS -->
+                        <rect x="183" y="326" width="29" height="62" rx="5" fill="#1a1a2e" />
+                        <rect x="218" y="326" width="29" height="62" rx="5" fill="#1a1a2e" />
+                        <!-- Shoes -->
+                        <ellipse cx="197" cy="390" rx="19" ry="7" fill="#111" />
+                        <ellipse cx="232" cy="390" rx="19" ry="7" fill="#111" />
+                        <!-- Shoe highlight -->
+                        <ellipse cx="192" cy="387" rx="6" ry="2.5" fill="rgba(255,255,255,.06)" />
+                        <ellipse cx="227" cy="387" rx="6" ry="2.5" fill="rgba(255,255,255,.06)" />
+
+                        <!-- TORSO / SHIRT -->
+                        <rect x="177" y="240" width="92" height="90" rx="10" fill="#1b2d4a" />
+                        <!-- Shirt stripes / detail -->
+                        <rect x="177" y="255" width="92" height="2" fill="rgba(255,255,255,.04)" />
+                        <rect x="177" y="270" width="92" height="2" fill="rgba(255,255,255,.04)" />
+                        <!-- Collar v-shape -->
+                        <path d="M213 240 L221 258 L229 240" fill="#162238" />
+                        <!-- Belt -->
+                        <rect x="177" y="320" width="92" height="10" rx="2" fill="#0d0d1a" />
+                        <rect x="205" y="321" width="36" height="8" rx="2" fill="#1e1e30" />
+                        <rect x="215" y="322" width="16" height="6" rx="1" fill="#2a2a42" />
+
+                        <!-- LEFT ARM (typing animation) -->
+                        <g style="transform-origin:195px 260px;animation:cb-arm .45s ease-in-out infinite">
+                            <rect x="148" y="252" width="50" height="20" rx="9" fill="#c8956c" />
+                            <!-- left hand fingers -->
+                            <rect x="143" y="268" width="34" height="9" rx="4" fill="#c8956c" />
+                            <rect x="143" y="264" width="7" height="9" rx="3" fill="#c8956c" />
+                            <rect x="152" y="262" width="7" height="11" rx="3" fill="#c8956c" />
+                            <rect x="161" y="263" width="7" height="10" rx="3" fill="#c8956c" />
+                            <rect x="170" y="265" width="6" height="8" rx="3" fill="#c8956c" />
+                        </g>
+
+                        <!-- RIGHT ARM (typing animation, offset) -->
+                        <g style="transform-origin:251px 260px;animation:cb-arm-r .45s ease-in-out .22s infinite">
+                            <rect x="248" y="252" width="50" height="20" rx="9" fill="#c8956c" />
+                            <!-- right hand fingers -->
+                            <rect x="269" y="268" width="34" height="9" rx="4" fill="#c8956c" />
+                            <rect x="276" y="264" width="7" height="9" rx="3" fill="#c8956c" />
+                            <rect x="267" y="262" width="7" height="11" rx="3" fill="#c8956c" />
+                            <rect x="258" y="263" width="7" height="10" rx="3" fill="#c8956c" />
+                            <rect x="250" y="265" width="6" height="8" rx="3" fill="#c8956c" />
+                        </g>
+
+                        <!-- NECK -->
+                        <rect x="207" y="220" width="32" height="24" rx="7" fill="#c8956c" />
+
+                        <!-- HEAD (gentle bob) -->
+                        <g style="transform-origin:223px 205px;animation:cb-bob 5.5s ease-in-out infinite">
+                            <!-- Head -->
+                            <ellipse cx="223" cy="195" rx="40" ry="44" fill="#c8956c" />
+                            <!-- Hair top -->
+                            <ellipse cx="223" cy="158" rx="40" ry="22" fill="#1a0e05" />
+                            <rect x="183" y="150" width="80" height="22" fill="#1a0e05" />
+                            <!-- Side hair -->
+                            <ellipse cx="185" cy="178" rx="11" ry="20" fill="#1a0e05" />
+                            <ellipse cx="261" cy="178" rx="11" ry="20" fill="#1a0e05" />
+                            <!-- Hair fade into skin -->
+                            <ellipse cx="223" cy="170" rx="40" ry="8" fill="#c8956c" opacity=".3" />
+                            <!-- Ears -->
+                            <ellipse cx="182" cy="198" rx="8" ry="10" fill="#c8956c" />
+                            <ellipse cx="264" cy="198" rx="8" ry="10" fill="#c8956c" />
+                            <ellipse cx="182" cy="198" rx="4" ry="6" fill="#b87a55" />
+                            <ellipse cx="264" cy="198" rx="4" ry="6" fill="#b87a55" />
+                            <!-- GLASSES FRAMES -->
+                            <rect x="196" y="187" width="24" height="18" rx="5" fill="none" stroke="#333" stroke-width="2" />
+                            <rect x="226" y="187" width="24" height="18" rx="5" fill="none" stroke="#333" stroke-width="2" />
+                            <line x1="220" y1="196" x2="226" y2="196" stroke="#333" stroke-width="1.8" />
+                            <line x1="196" y1="196" x2="190" y2="193" stroke="#333" stroke-width="1.8" />
+                            <line x1="250" y1="196" x2="256" y2="193" stroke="#333" stroke-width="1.8" />
+                            <!-- Lens tint -->
+                            <rect x="197" y="188" width="22" height="16" rx="4" fill="rgba(100,180,255,.08)" />
+                            <rect x="227" y="188" width="22" height="16" rx="4" fill="rgba(100,180,255,.08)" />
+                            <!-- EYES -->
+                            <ellipse cx="208" cy="196" rx="5" ry="5.5" fill="#2a1a0a" />
+                            <ellipse cx="238" cy="196" rx="5" ry="5.5" fill="#2a1a0a" />
+                            <!-- Iris -->
+                            <circle cx="208" cy="196" r="3" fill="#5a3a18" />
+                            <circle cx="238" cy="196" r="3" fill="#5a3a18" />
+                            <!-- Pupils -->
+                            <circle cx="208" cy="196" r="1.5" fill="#111" />
+                            <circle cx="238" cy="196" r="1.5" fill="#111" />
+                            <!-- Eye shine -->
+                            <circle cx="210" cy="194" r="1.2" fill="white" opacity=".9" />
+                            <circle cx="240" cy="194" r="1.2" fill="white" opacity=".9" />
+                            <!-- Eyebrows -->
+                            <path d="M199 184 Q208 180 217 183" fill="none" stroke="#1a0e05" stroke-width="2.2" stroke-linecap="round" />
+                            <path d="M229 183 Q238 180 247 184" fill="none" stroke="#1a0e05" stroke-width="2.2" stroke-linecap="round" />
+                            <!-- SMILE -->
+                            <path d="M214 212 Q223 220 232 212" fill="none" stroke="#a06040" stroke-width="2" stroke-linecap="round" />
+                            <!-- Cheek blush -->
+                            <ellipse cx="195" cy="206" rx="8" ry="5" fill="#e8927a" opacity=".25" />
+                            <ellipse cx="251" cy="206" rx="8" ry="5" fill="#e8927a" opacity=".25" />
+                            <!-- Chin stubble hint -->
+                            <ellipse cx="223" cy="220" rx="16" ry="5" fill="#2a180e" opacity=".3" />
+                        </g>
+
+                    </g>
+
+                    <!-- FLOATING CODE TAGS -->
+                    <g style="animation:cb-tag 3.5s ease-in-out .4s infinite;opacity:.75">
+                        <rect x="78" y="125" width="62" height="22" rx="4" fill="rgba(78,205,196,.14)" stroke="rgba(78,205,196,.5)" stroke-width=".8" />
+                        <text x="109" y="140" font-size="8.5" fill="#4ecdc4" font-family="monospace" text-anchor="middle">&lt;/build&gt;</text>
+                    </g>
+                    <g style="animation:cb-tag 4s ease-in-out 1.1s infinite;opacity:.65">
+                        <rect x="292" y="115" width="68" height="22" rx="4" fill="rgba(240,165,0,.12)" stroke="rgba(240,165,0,.45)" stroke-width=".8" />
+                        <text x="326" y="130" font-size="8.5" fill="#f0a500" font-family="monospace" text-anchor="middle">.NET Core</text>
+                    </g>
+                    <g style="animation:cb-tag 3.8s ease-in-out 2s infinite;opacity:.55">
+                        <rect x="308" y="270" width="56" height="20" rx="4" fill="rgba(224,93,68,.12)" stroke="rgba(224,93,68,.4)" stroke-width=".8" />
+                        <text x="336" y="283" font-size="8" fill="#e05d44" font-family="monospace" text-anchor="middle">C# · SQL</text>
+                    </g>
+                    <g style="animation:cb-tag 4.2s ease-in-out .8s infinite;opacity:.5">
+                        <rect x="62" y="230" width="52" height="20" rx="4" fill="rgba(168,230,175,.1)" stroke="rgba(168,230,175,.35)" stroke-width=".8" />
+                        <text x="88" y="243" font-size="7.5" fill="#a8e6af" font-family="monospace" text-anchor="middle">API ✓</text>
+                    </g>
+
+                    <!-- SPARKLE DOTS -->
+                    <circle cx="96" cy="195" r="3.5" fill="var(--accent)" style="animation:cb-sparkle 2.8s ease-in-out .4s infinite" />
+                    <circle cx="348" cy="175" r="2.5" fill="#4ecdc4" style="animation:cb-sparkle 2.8s ease-in-out 1s infinite" />
+                    <circle cx="82" cy="272" r="2.5" fill="#e05d44" style="animation:cb-sparkle 3.2s ease-in-out 1.6s infinite" />
+                    <circle cx="352" cy="255" r="3" fill="var(--accent)" style="animation:cb-sparkle 2.5s ease-in-out .7s infinite" />
+                    <circle cx="112" cy="310" r="2" fill="#4ecdc4" style="animation:cb-sparkle 3.5s ease-in-out 2.2s infinite" />
+                    <circle cx="330" cy="140" r="2" fill="var(--accent)" style="animation:cb-sparkle 3s ease-in-out 1.4s infinite" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="scroll-ind"><span class="scroll-txt">Scroll</span><div class="scroll-line"></div></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="reveal">
+                <div class="photo-frame">
+                    <img src="~/img/profile-img.jpg" alt="Muthu Bhava" onerror="this.outerHTML='<div class=\'photo-ph\'>MB</div>'">
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="sec-label">01 // About</div>
+                <h2 class="sec-title">Who I Am</h2>
+                <h3 class="about-sub">.NET Developer & Full Stack Engineer</h3>
+                <p class="about-p">Hi, I'm <strong style="color:var(--accent)">Muthu Bhava Jamal Mohammed</strong> — a .NET Developer with 3+ years of experience building scalable web applications, APIs, and enterprise systems.</p>
+                <p class="about-p">Specialized in .NET Core, C#, MVC, Web API & MS-SQL — with hands-on experience in React Native and Azure DevOps. I thrive at the intersection of design and engineering.</p>
+                <p class="about-p">Currently at IMFS Study Abroad. Previously at Enliten IT India and Masstech Business Solutions, building robust .NET web applications with C#, LINQ, and Entity Framework.</p>
+                <div class="info-grid">
+                    <div class="info-row"><div class="info-k">Birthday</div><div class="info-v">23 October 2000</div></div>
+                    <div class="info-row"><div class="info-k">Age</div><div class="info-v">24</div></div>
+                    <div class="info-row"><div class="info-k">Location</div><div class="info-v">Mumbai, India</div></div>
+                    <div class="info-row"><div class="info-k">Degree</div><div class="info-v">B.Sc. Information Technology</div></div>
+                    <div class="info-row"><div class="info-k">Phone</div><div class="info-v">+91 8976413543</div></div>
+                    <div class="info-row"><div class="info-k">Email</div><div class="info-v">bhavamuthu786@gmail.com</div></div>
+                    <div class="info-row"><div class="info-k">Freelance</div><div class="info-v" style="color:var(--accent)">✓ Available</div></div>
+                    <div class="info-row"><div class="info-k">Stack</div><div class="info-v">.NET Core · C# · MS-SQL</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="reveal"><div class="sec-label">02 // Skills</div><h2 class="sec-title">Tech Stack</h2><p class="sec-desc">Hands-on experience across the full .NET stack — backend APIs, database-driven apps, responsive frontends, and cloud deployments.</p></div>
+        <div class="skills-grid">
+            <div class="sk-card reveal" data-pct="90"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" onerror="this.style.display='none'"> C# / .NET Core</span><span class="sk-pct">90%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="88"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" onerror="this.style.display='none'"> Entity Framework & LINQ</span><span class="sk-pct">88%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="88"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" onerror="this.style.display='none'"> MS-SQL (2008–2022)</span><span class="sk-pct">88%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="85"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" onerror="this.style.display='none'"> MVC & Web Forms</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="85"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain.svg" onerror="this.style.display='none'"> Web API / REST & ADO.NET</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="85"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" onerror="this.style.display='none'"> jQuery & HTML/CSS</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="85"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" onerror="this.style.display='none'"> GitHub & Version Control</span><span class="sk-pct">85%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="82"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" onerror="this.style.display='none'"> Swagger / Postman</span><span class="sk-pct">82%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="80"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" onerror="this.style.display='none'"> Azure DevOps</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="80"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" onerror="this.style.display='none'"> Data Science & Analytics</span><span class="sk-pct">80%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="60"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" onerror="this.style.display='none'"> JavaScript</span><span class="sk-pct">60%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+            <div class="sk-card reveal" data-pct="55"><div class="sk-head"><span class="sk-name"><img class="sk-ico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" onerror="this.style.display='none'"> React Native</span><span class="sk-pct">55%</span></div><div class="sk-track"><div class="sk-fill"></div></div></div>
+        </div>
+    </section>
+    <!-- RESUME -->
+    <section id="resume">
+       
+        <div class="reveal"><div class="sec-label">03 // Resume</div><h2 class="sec-title">Experience &amp; Education</h2><p class="sec-desc">A results-driven .NET Developer delivering scalable enterprise solutions across EdTech, Finance, Fitness, and Management domains.</p></div>
+        <div class="resume-grid">
+            <div>
+                <div class="r-col-title">// Work Experience</div>
+                <div class="tl">
+                    <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">05/2024 — Present</div><div class="tl-role">Associate Software Engineer</div><div class="tl-co">IMFS Study Abroad · Thane, Maharashtra</div><ul class="tl-pts"><li>Built LMS Platform supporting GRE, GMAT, IELTS, TOEFL, SAT programs with role-based access.</li><li>Developed Counselling Portal for LORs, SOPs, and essays with collaborative workflows.</li><li>Created Speed Exam, Digital SAT, Inwords App, University Recommender end-to-end.</li></ul></div>
+                    <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">11/2022 — 04/2024</div><div class="tl-role">Dot Net Developer</div><div class="tl-co">Enliten IT India Pvt. Ltd. · Navi Mumbai</div><ul class="tl-pts"><li>Built Group Fit — fitness platform with Stripe and Twilio integration.</li><li>Developed Acuite — credit rating web app for SEBI-registered agency.</li><li>Delivered Petalo Global — order and stock management system.</li></ul></div>
+                    <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">05/2022 — 10/2022</div><div class="tl-role">Dot Net Developer</div><div class="tl-co">Masstech Business Solutions · Mumbai</div><ul class="tl-pts"><li>Developed Event Management System using ASP.NET Web Forms.</li><li>Built College Canteen Automation System with MS-SQL.</li></ul></div>
+                </div>
+            </div>
+            <div>
+                <div class="r-col-title">// Education</div>
+                <div class="tl">
+                    <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2018 — 2021</div><div class="tl-role">B.Sc. Information Technology</div><div class="tl-co">VPM R.Z Shah College · Mulund, Mumbai</div><ul class="tl-pts"><li>Focused on software development, database management, and web technologies.</li></ul></div>
+                    <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2016 — 2018</div><div class="tl-role">Higher Secondary Certificate (HSC)</div><div class="tl-co">Vidhya Mandir Junior College · Mulund, Mumbai</div></div>
+                    <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2016</div><div class="tl-role">Secondary School Certificate (SSC)</div><div class="tl-co">R.R. Educational Trust English School · Mulund</div></div>
+                    <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Jun 2021</div><div class="tl-role">Professional Development Program</div><div class="tl-co">TCS via LinkedIn Learning</div><ul class="tl-pts"><li>10-course program covering workplace communication, leadership & critical thinking.</li></ul></div>
+                </div>
+            </div>
+        </div>
+    </section>
+  @*   <div style="margin-top:2rem;margin-bottom:2rem;">
+        <a href="assets/resume.pdf" download class="btn-gold">
+            Download Resume
+        </a>
+    </div> *@
+    <div class="services-cta reveal" style="margin-bottom: 2rem;">
+        <h3>A deeper dive into my experience — just one click away.</h3>
+        <a href="~/img/resume.pdf" download class="btn-gold">Download Resume</a>
+    </div>
+    <!-- PORTFOLIO -->
+
+    <section id="portfolio">
+        <div class="reveal">
+            <div class="sec-label">04 // Portfolio</div>
+            <h2 class="sec-title">Projects</h2>
+            <p class="sec-desc">
+                Real-world projects built across enterprise, education, fitness, and finance — end-to-end .NET solutions.
+            </p>
+        </div>
+
+        <!-- 🔥 FILTER BUTTONS -->
+        <div class="pf-filters">
+            <button class="pf-btn active" data-filter="all">All</button>
+            <button class="pf-btn" data-filter="edtech">EdTech</button>
+            <button class="pf-btn" data-filter="ai">AI</button>
+            <button class="pf-btn" data-filter="crm">CRM</button>
+            <button class="pf-btn" data-filter="fitness">Fitness</button>
+            <button class="pf-btn" data-filter="finance">Finance</button>
+            <button class="pf-btn" data-filter="management">Management</button>
+        </div>
+
+        <div class="pf-grid">
+
+            <!-- LMS -->
+            <div class="pf-card reveal" data-cat="edtech">
+                <div class="pf-image">
+                    <img src="~/img/LMS.png" class="pf-img" alt="LMS">
+                </div>
+                <div class="pf-content">
+                    <div class="pf-cat">EdTech</div>
+                    <div class="pf-title">LMS Platform</div>
+                    <div class="pf-tech">Role-Based System</div>
+                </div>
+            </div>
+
+            <!-- Counselling -->
+            <div class="pf-card reveal" data-cat="edtech">
+                <div class="pf-image">
+                    <img src="~/img/Counselling.png" class="pf-img" alt="Counselling">
+                </div>
+                <div class="pf-content">
+                    <div class="pf-cat">EdTech</div>
+                    <div class="pf-title">Counselling Portal</div>
+                    <div class="pf-tech">Docs Workflow</div>
+                </div>
+            </div>
+
+            <!-- Speed Exam -->
+            <div class="pf-card reveal" data-cat="edtech">
+                <div class="pf-image">
+                    <img src="~/img/speedexam.png" class="pf-img" alt="Speed Exam">
+                </div>
+                <div class="pf-content">
+                    <div class="pf-cat">EdTech</div>
+                    <div class="pf-title">Speed Exam</div>
+                    <div class="pf-tech">Adaptive Testing</div>
+                </div>
+            </div>
+
+            <!-- Inwords -->
+            <div class="pf-card reveal" data-cat="edtech">
+                <div class="pf-image">
+                    <img src="~/img/inwords1.png" class="pf-img" alt="Inwords">
+                </div>
+                <div class="pf-content">
+                    <div class="pf-cat">Mobile App</div>
+                    <div class="pf-title">Inwords App</div>
+                    <div class="pf-tech">Laravel · MySQL</div>
+                </div>
+            </div>
+
+
+            <!-- Digital SAT -->
+            <div class="pf-card reveal" data-cat="edtech">
+                <div class="pf-image">
+                    <img src="~/img/digital-sat.jpg" class="pf-img" alt="Digital SAT">
+                </div>
+                <a href="https://www.imfs.co.in/" target="_blank" class="pf-link">↗</a>
+                <div class="pf-content">
+                    <div class="pf-cat">EdTech</div>
+                    <div class="pf-title">Digital SAT Platform</div>
+                    <div class="pf-tech">.NET Core · MS-SQL · React</div>
+                </div>
+            </div>       
+
+            <!-- CRM -->
+            <div class="pf-card reveal" data-cat="crm">
+                <div class="pf-image">
+                    <img src="~/img/CRM.png" class="pf-img" alt="CRM">
+                </div>
+                <a href="https://www.imfs.co.in/" target="_blank" class="pf-link">↗</a>
+                <div class="pf-content">
+                    <div class="pf-cat">CRM</div>
+                    <div class="pf-title">CRM — IMFS</div>
+                    <div class="pf-tech">.NET Core · MVC</div>
+                </div>
+            </div>
+
+            <!-- Recommender -->
+            <div class="pf-card reveal" data-cat="ai">
+                <div class="pf-image">
+                    <img src="~/img/digital-sat.jpg" class="pf-img" alt="Recommender">
+                </div>
+                <a href="https://www.imfs.co.in/" target="_blank" class="pf-link">↗</a>
+                <div class="pf-content">
+                    <div class="pf-cat">AI Tool</div>
+                    <div class="pf-title">University Recommender</div>
+                    <div class="pf-tech">React · .NET Core</div>
+                </div>
+            </div>
+
+            <!-- Group Fit -->
+            <div class="pf-card reveal" data-cat="fitness">
+                <div class="pf-image">
+                    <img src="~/img/groupfit.png" class="pf-img" alt="Group Fit">
+                </div>
+                <a href="https://groupfitapp.com/" target="_blank" class="pf-link">↗</a>
+                <div class="pf-content">
+                    <div class="pf-cat">Fitness</div>
+                    <div class="pf-title">Group Fit</div>
+                    <div class="pf-tech">Stripe · Twilio</div>
+                </div>
+            </div>
+
+            <!-- Acuite -->
+            <div class="pf-card reveal" data-cat="finance">
+                <div class="pf-image">
+                    <img src="~/img/Acuite.png" class="pf-img" alt="Acuite">
+                </div>
+                <a href="https://acuiteweb.edifybiz.com/" target="_blank" class="pf-link">↗</a>
+                <div class="pf-content">
+                    <div class="pf-cat">Finance</div>
+                    <div class="pf-title">Acuite</div>
+                    <div class="pf-tech">MVC · MS-SQL</div>
+                </div>
+            </div>
+
+            <!-- Petalo -->
+            <div class="pf-card reveal" data-cat="management">
+                <div class="pf-image">
+                    <img src="~/img/petalo.jpg" class="pf-img" alt="Petalo">
+                </div>
+                <a href="https://petalo.edifybiz.com/" target="_blank" class="pf-link">↗</a>
+                <div class="pf-content">
+                    <div class="pf-cat">Management</div>
+                    <div class="pf-title">Petalo Global</div>
+                    <div class="pf-tech">Inventory System</div>
+                </div>
+            </div>
+
+            <!-- Society -->
+            <div class="pf-card reveal" data-cat="management">
+                <div class="pf-image">
+                    <img src="~/img/Masstech-Logo-Resize.png" class="pf-img" alt="Society">
+                </div>
+                <a href="https://www.imfs.co.in/" target="_blank" class="pf-link">↗</a>
+                <div class="pf-content">
+                    <div class="pf-cat">Management</div>
+                    <div class="pf-title">Society Management</div>
+                    <div class="pf-tech">Web Forms · SQL</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section id="services">
+        <div class="reveal">
+            <div class="sec-label">05 // Services</div>
+            <h2 class="sec-title">What I Offer</h2>
+            <p class="sec-desc">
+                End-to-end development services — from backend architecture to frontend delivery and cloud deployments.
+            </p>
+        </div>
+
+        <div class="svc-grid">
+
+            <!-- 1 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="svc-title">.NET Web Application Dev</div>
+                <div class="svc-desc">
+                    Scalable, high-performance web apps using .NET Core, C#, MVC architecture, and Web Forms — from concept to deployment.
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="svc-title">REST API & Web API</div>
+                <div class="svc-desc">
+                    Robust, secure RESTful APIs integrated with Swagger, Postman testing, and ready for mobile or third-party consumption.
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-database"></i></div>
+                <div class="svc-title">Database Design & Management</div>
+                <div class="svc-desc">
+                    MS-SQL databases with optimized queries, stored procedures using Entity Framework, LINQ, and ADO.NET.
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-cloud"></i></div>
+                <div class="svc-title">Azure DevOps & Deployment</div>
+                <div class="svc-desc">
+                    CI/CD pipelines, source control, and cloud deployments using Microsoft Azure DevOps — smooth automated delivery.
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-credit-card"></i></div>
+                <div class="svc-title">Stripe Payment Integration</div>
+                <div class="svc-desc">
+                    Secure payment flows — subscriptions, one-time payments, webhooks, and transaction management.
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="svc-title">EdTech & LMS Development</div>
+                <div class="svc-desc">
+                    Full-featured EdTech platforms including LMS, exam engines, vocabulary apps, and university recommenders.
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-right-left"></i></div>
+                <div class="svc-title">Legacy .NET Migration</div>
+                <div class="svc-desc">
+                    Migrating legacy ASP.NET Web Forms to modern .NET Core — improving performance, security, and maintainability.
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="svc-title">Analytics Dashboards</div>
+                <div class="svc-desc">
+                    Interactive reporting dashboards using MS-SQL, LINQ, and .NET Core — real-time business insights.
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="svc-card reveal">
+                <div class="svc-ico"><i class="fa-solid fa-bolt"></i></div>
+                <div class="svc-title">Redis Queue & Background Jobs</div>
+                <div class="svc-desc">
+                    Redis-based message queuing and background job processing — async tasks, caching, high-throughput pipelines.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 🔥 CTA -->
+        <div class="services-cta reveal">
+            <h3>Have a project in mind?</h3>
+            <a href="#contact" class="btn-gold">Hire Me</a>
+        </div>
+    </section>
+
+@*     <section id="services">
+        <div class="reveal"><div class="sec-label">05 // Services</div><h2 class="sec-title">What I Offer</h2><p class="sec-desc">End-to-end development services — from backend architecture to frontend delivery and cloud deployments.</p></div>
+        <div class="svc-grid">
+            <div class="svc-card reveal"><div class="svc-ico">⟨/⟩</div><div class="svc-title">.NET Web Application Dev</div><div class="svc-desc">Scalable, high-performance web apps using .NET Core, C#, MVC architecture, and Web Forms — from concept to deployment.</div></div>
+            <div class="svc-card reveal"><div class="svc-ico">◎</div><div class="svc-title">REST API & Web API</div><div class="svc-desc">Robust, secure RESTful APIs integrated with Swagger, Postman testing, and ready for mobile or third-party consumption.</div></div>
+            <div class="svc-card reveal"><div class="svc-ico">▦</div><div class="svc-title">Database Design & Management</div><div class="svc-desc">MS-SQL databases with optimized queries, stored procedures using Entity Framework, LINQ, and ADO.NET.</div></div>
+            <div class="svc-card reveal"><div class="svc-ico">☁</div><div class="svc-title">Azure DevOps & Deployment</div><div class="svc-desc">CI/CD pipelines, source control, and cloud deployments using Microsoft Azure DevOps — smooth automated delivery.</div></div>
+            <div class="svc-card reveal"><div class="svc-ico">◈</div><div class="svc-title">Stripe Payment Integration</div><div class="svc-desc">Secure payment flows — subscriptions, one-time payments, webhooks, and transaction management.</div></div>
+            <div class="svc-card reveal"><div class="svc-ico">✦</div><div class="svc-title">EdTech & LMS Development</div><div class="svc-desc">Full-featured EdTech platforms including LMS, exam engines, vocabulary apps, and university recommenders.</div></div>
+            <div class="svc-card reveal"><div class="svc-ico">⟳</div><div class="svc-title">Legacy .NET Migration</div><div class="svc-desc">Migrating legacy ASP.NET Web Forms to modern .NET Core — improving performance, security, and maintainability.</div></div>
+            <div class="svc-card reveal"><div class="svc-ico">▣</div><div class="svc-title">Analytics Dashboards</div><div class="svc-desc">Interactive reporting dashboards using MS-SQL, LINQ, and .NET Core — real-time business insights.</div></div>
+            <div class="svc-card reveal"><div class="svc-ico">⚡</div><div class="svc-title">Redis Queue & Background Jobs</div><div class="svc-desc">Redis-based message queuing and background job processing — async tasks, caching, high-throughput pipelines.</div></div>
+        </div>
+    </section>
+ *@
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" style="background:var(--bg2)">
+        <div class="reveal"><div class="sec-label">06 // Testimonials</div><h2 class="sec-title">What They Say</h2><p class="sec-desc">Grateful to every leader, team member, and client who placed their trust in me.</p></div>
+        <div class="test-grid">
+            <div class="test-card reveal"><div class="test-q">"</div><p class="test-txt">Muthu demonstrated exceptional product thinking while building the University Recommender and CRM for IMFS. He understood our business workflows deeply and delivered systems that genuinely transformed how we manage student journeys.</p><div class="test-auth"><img src="img/inder-sir.jpg" class="test-av" onerror="this.style.background='#2a1f10';this.removeAttribute('src')"><div><div class="test-name">Inderjit Singh Matta</div><div class="test-role">CEO, IMFS Study Abroad</div><div class="stars">★★★★★</div></div></div></div>
+            <div class="test-card reveal"><div class="test-q">"</div><p class="test-txt">Muthu was a key contributor across our LMS, Counselling Portal, and Inwords projects. His technical skills in .NET Core and MS-SQL are solid, but what impressed me most was his ownership mindset — he always delivered on time.</p><div class="test-auth"><img src="img/Akshay-kadam.jpg" class="test-av" onerror="this.style.background='#10202a';this.removeAttribute('src')"><div><div class="test-name">Akshay Kadam</div><div class="test-role">Tech Lead, IMFS Study Abroad</div><div class="stars">★★★★★</div></div></div></div>
+            <div class="test-card reveal"><div class="test-q">"</div><p class="test-txt">Muthu was an integral part of our development team at Enliten IT. His ability to handle pressure, manage deployments, and keep the team aligned made him a standout developer in our organization.</p><div class="test-auth"><img src="img/Aashish-Sir.png" class="test-av" onerror="this.style.background='#1a1020';this.removeAttribute('src')"><div><div class="test-name">Aashish Sharma</div><div class="test-role">CEO, Enliten IT India</div><div class="stars">★★★★★</div></div></div></div>
+            <div class="test-card reveal"><div class="test-q">"</div><p class="test-txt">Collaborating with Muthu on Group Fit was fantastic. He owned the entire backend — MVC architecture, Web API, Stripe payment, and Twilio integration — and executed it flawlessly. Always has the team's back.</p><div class="test-auth"><img src="img/danish.png" class="test-av" onerror="this.style.background='#10201a';this.removeAttribute('src')"><div><div class="test-name">Danish Ansari</div><div class="test-role">Co-Developer, Enliten IT India</div><div class="stars">★★★★★</div></div></div></div>
+            <div class="test-card reveal"><div class="test-q">"</div><p class="test-txt">Muthu did an outstanding job on the Petalo Global system. He grasped our complex inventory requirements quickly and built a clean, reliable solution. His attention to detail was truly commendable.</p><div class="test-auth"><img src="img/Bhakti-Maam.png" class="test-av" onerror="this.style.background='#201020';this.removeAttribute('src')"><div><div class="test-name">Bhakti Sharma</div><div class="test-role">COO, Enliten IT India</div><div class="stars">★★★★★</div></div></div></div>
+            <div class="test-card reveal"><div class="test-q">"</div><p class="test-txt">Muthu contributed significantly to our Society Management System. His work on the billing module was accurate, well-structured, and thoroughly documented. Even as a fresher he showed the depth of a seasoned developer.</p><div class="test-auth"><img src="img/Abhishek-Wikal.jpg" class="test-av" onerror="this.style.background='#1a1810';this.removeAttribute('src')"><div><div class="test-name">Abhishek Wikal</div><div class="test-role">CEO, Masstech Business Solutions</div><div class="stars">★★★★★</div></div></div></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="reveal"><div class="sec-label">07 // Contact</div><h2 class="sec-title">Let's Talk</h2><p class="sec-desc">Open to full-time opportunities, freelance projects, and collaborations. Let's build something great together.</p></div>
+        <div class="contact-grid">
+            <div class="c-items reveal">
+                <div class="c-item"><span class="c-ico">📍</span><div><div class="c-lbl">Location</div><div class="c-val">192, Anand Nagar, Mhada Colony,<br>Mulund East, Mumbai — 400081</div></div></div>
+                <div class="c-item"><span class="c-ico">📞</span><div><div class="c-lbl">Phone</div><div class="c-val">+91 8976413543</div></div></div>
+                <div class="c-item"><span class="c-ico">✉️</span><div><div class="c-lbl">Email</div><div class="c-val">bhavamuthu786@gmail.com</div></div></div>
+                <div class="c-item"><span class="c-ico">💼</span><div><div class="c-lbl">Status</div><div class="c-val" style="color:var(--accent)">Open to Opportunities</div></div></div>
+            </div>
+            <form class="c-form reveal" onsubmit="sendMail(event)">
+                <div class="f-row">
+                    <input type="text" id="name" class="f-in" placeholder="Your Name" required>
+                    <input type="email" id="email" class="f-in" placeholder="Your Email" required>
+                </div>
+                <input type="text" id="subject" class="f-in" placeholder="Subject" required>
+                <textarea id="message" class="f-ta" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="f-sub">Send Message →</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div><div class="footer-brand">Muthu Bhava Jamal Mohammed</div><div class="footer-copy">© 2025 All Rights Reserved · Made with passion in Mumbai</div></div>
+        <div class="socials">
+            <a href="mailto:bhavamuthu786@gmail.com" class="soc">✉</a>
+            <a href="https://www.linkedin.com/in/muthu-bhava" target="_blank" class="soc">in</a>
+            <a href="#" class="soc">⌥</a>
+            <a href="#" class="soc">𝕏</a>
+        </div>
+    </footer>
+
+
+    <script src="~/js/script.js"></script>
+</body>
+</html>
